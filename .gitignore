@@ -4,3 +4,5 @@ mlruns
 youtube
 Youtube_Insight.egg-info
 *.log
+/bow_vectorizer.pkl
+/logistic_regression.pkl

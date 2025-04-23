@@ -17,3 +17,20 @@ stages:
     - src/data/data_preprocessing.py
     outs:
     - data/interim
+
+  model_building:
+    cmd: python src/model/model_building.py
+    deps:
+    - data/interim/train_processed.csv
+    - src/model/model_building.py
+    params:
+    - model_building.C
+    - model_building.max_iter
+    - model_building.solver
+    - model_building.max_features
+    - model_building.ngram_range
+    - data_ingestion.random_state
+    outs:
+    - bow_vectorizer.pkl
+    - logistic_regression.pkl
+

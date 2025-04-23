@@ -38,3 +38,33 @@ stages:
       md5: 046666bea80436eff909d9af694e1e39.dir
       size: 5132728
       nfiles: 2
+  model_building:
+    cmd: python src/model/model_building.py
+    deps:
+    - path: data/interim/train_processed.csv
+      hash: md5
+      md5: ac30abfb72b7bcd2350c617920088e84
+      size: 4132640
+    - path: src/model/model_building.py
+      hash: md5
+      md5: c2c1f938b6b621b136a2569b690bd0d1
+      size: 5303
+    params:
+      params.yaml:
+        data_ingestion.random_state: 42
+        model_building.C: 2.777881512619246
+        model_building.max_features: 1000
+        model_building.max_iter: 409
+        model_building.ngram_range:
+        - 1
+        - 1
+        model_building.solver: liblinear
+    outs:
+    - path: bow_vectorizer.pkl
+      hash: md5
+      md5: 922fd2b235643119e52f2491c20ffee7
+      size: 24202
+    - path: logistic_regression.pkl
+      hash: md5
+      md5: 9590c8056aa135522552077ccf4bb4a8
+      size: 24757
