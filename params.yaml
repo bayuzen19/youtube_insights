@@ -1,0 +1,11 @@
+data_ingestion:
+  test_size: 0.2
+  random_state: 42
+
+model_building:
+  ngram_range: [1,1]
+  max_features: 1000
+  max_iter: 409
+  C: 2.777881512619246
+  solver: 'liblinear'
+  

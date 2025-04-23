@@ -1,0 +1,4 @@
+2025-04-23 23:48:59,312 - data_ingestion - ERROR - Unexpected error occurred while saving the data: [Errno 13] Permission denied: 'D:\\programming\\learning\\my studying\\personal\\sentiment\\src\\data\\../../data\\raw\\train.csv'
+2025-04-23 23:48:59,313 - data_ingestion - ERROR - Failed to complete the data ingestion process: [Errno 13] Permission denied: 'D:\\programming\\learning\\my studying\\personal\\sentiment\\src\\data\\../../data\\raw\\train.csv'
+2025-04-23 23:49:13,629 - data_ingestion - ERROR - Unexpected error occurred while saving the data: [Errno 13] Permission denied: 'D:\\programming\\learning\\my studying\\personal\\sentiment\\src\\data\\../../data\\raw\\train.csv'
+2025-04-23 23:49:13,629 - data_ingestion - ERROR - Failed to complete the data ingestion process: [Errno 13] Permission denied: 'D:\\programming\\learning\\my studying\\personal\\sentiment\\src\\data\\../../data\\raw\\train.csv'
