@@ -6,3 +6,8 @@ Youtube_Insight.egg-info
 *.log
 /bow_vectorizer.pkl
 /logistic_regression.pkl
+/experiment_info.json
+
+src/__pycache__/
+src/data/__pycache__/
+src/model/__pycache__/

@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Sentiment Insight",
+    "version": "1.0",
+    "description": "Sentiment analyze Youtube video comment",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting",
+      "http://localhost/*",
+      "https://www.googleapi.com/*"
+    ]
+  }

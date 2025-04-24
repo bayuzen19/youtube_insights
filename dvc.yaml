@@ -34,3 +34,19 @@ stages:
     - bow_vectorizer.pkl
     - logistic_regression.pkl
 
+  model_evaluation:
+    cmd: python src/model/model_evaluation.py
+    deps:
+    - bow_vectorizer.pkl
+    - logistic_regression.pkl
+    - data/interim/train_processed.csv
+    - data/interim/test_processed.csv
+    - src/model/model_evaluation.py
+    outs:
+    - experiment_info.json
+
+  model_registration:
+    cmd: python src/model/register_model.py
+    deps:
+    - experiment_info.json
+    - src/model/register_model.py
